@@ -7,7 +7,8 @@ HOW TO USE?
 -----------
 
 
-Default is 1 index of pager, that <li> will receive active class 
+Default is 1 index of pager, that index will receive active class 
+
 ```
 $p = (isset($_GET['p']))? $_GET['p'] : 1;  
 ```
