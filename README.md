@@ -14,6 +14,7 @@ $p = (isset($_GET['p']))? $_GET['p'] : 1;
 ```
 
 Creating
+
 10 is total itens to show
 ```
 $pager = new pager($yourArrayList, $p, 10);
@@ -48,10 +49,19 @@ HTML
   ...
 </ul>
 ```
+or if use href
+```
+<ul class="pager">
+  <a href="/yourpage.html?p=1"><li class="active">1</li></a>
+  <a href="/yourpage.html?p=2"><li>2</li></a>
+  <a href="/yourpage.html?p=3"><li>3</li></a>
+  ...
+</ul>
+```
 
 CSS
-```
-.pager li{
+
+.pager li, .pager a{
 
   border:thin solid #ccc; 
   color:#666;
