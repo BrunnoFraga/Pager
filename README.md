@@ -60,7 +60,7 @@ or if use href
 ```
 
 CSS
-
+```
 .pager li, .pager a{
 
   border:thin solid #ccc; 
