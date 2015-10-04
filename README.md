@@ -14,7 +14,7 @@ $p = (isset($_GET['p']))? $_GET['p'] : 1;
 ```
 
 Creating
-10 IS TOTAL ITENS TO SHOW
+10 is total itens to show
 ```
 $pager = new pager($yourArrayList, $p, 10);
 ```
@@ -52,11 +52,15 @@ HTML
 CSS
 ```
 .pager li{
+
   border:thin solid #ccc; 
   color:#666;
+  
 }
 .pager.active{
+
   color:$fff;
   background-color:#666;
+  
 }
 ```
