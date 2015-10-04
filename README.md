@@ -39,6 +39,7 @@ echo $pager->pager("href","yourpage.html");
 
 HTML / CSS
 -----------
+* You dont need to copy this code below, this just will be the final result
 
 HTML
 ```
