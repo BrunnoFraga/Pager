@@ -5,15 +5,17 @@ Pager PHP class for fast solutions
 
 HOW TO USE?
 -----------
-Example:
 
+
+Default is 1 index of pager, that <li> will receive active class 
 ```
-$p = (isset($_GET['p']))? $_GET['p'] : 1;  // DEFAULT 1 INDEX OF PAGER, THAT WILL RECEIVE ACTIVE CLASS 
+$p = (isset($_GET['p']))? $_GET['p'] : 1;  
 ```
 
 Creating
+10 IS TOTAL ITENS TO SHOW
 ```
-$pager = new pager($yourArrayList, $p, 10); // 10 IS TOTAL ITENS TO SHOW
+$pager = new pager($yourArrayList, $p, 10);
 ```
 Call List
 ```
