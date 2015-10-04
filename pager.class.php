@@ -73,7 +73,7 @@ class pager
 				if(($i < ($this->p+7) && $i > ($this->p-7)) || $i == ceil($this->total / $this->view) || $i == 1) // 7 IS THE NUMBER TO ABBREVIATE THE ITENS OF PAGER 1 ... 2 3 4 5 6 ... 7 USED FOR HIGH AMOUNTS LIST
 				{
 					// HREF
-					if($href == "href"){$a='<a class="'.(($i==$this->p)?"active":"").'" href="/'.$url.'&p='.$i.'" target="_self" >';$aa="</a>";}
+					if($href == "href"){$a='<a class="'.(($i==$this->p)?"active":"").'" href="/'.$url.'?p='.$i.'" target="_self" >';$aa="</a>";}
 					
 					//...
 					$last = ($i == ceil($this->total/$this->view))?"...":"";
