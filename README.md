@@ -7,7 +7,7 @@ HOW TO USE?
 -----------
 
 
-Default is 1 index of pager, that index will receive active class 
+Set your actual page (a simple example below):
 
 ```
 $p = (isset($_GET['p']))? $_GET['p'] : 1;  
@@ -15,63 +15,37 @@ $p = (isset($_GET['p']))? $_GET['p'] : 1;
 
 Creating
 
-10 is total itens to show
+In this case, we need to show only 10 items per page.
 ```
-$pager = new pager($yourArrayList, $p, 10);
+$pager = new Pager($yourArrayList, $p, 10);
 ```
-Call List
+Calling the `list` property (getting actual page's data).
 ```
 $list = $pager->get('list');
 foreach($list as $k => $v)
 {
-  echo $v;
+    echo $v;
 }
 ```
-Call Pager
+Call the pager
 ```
-echo $pager->pager();
+echo $pager->show();
 ```
 or
 ```
-echo $pager->pager("href","yourpage.html");
+echo $pager->show("/my-specific-subpage");
 ```
 
 
-HTML / CSS
+OUTPUT
 -----------
-* You dont need to copy this code below, this just will be the final result
 
 HTML
 ```
 <ul class="pager">
-  <li class="active">1</li>
-  <li>2</li>
-  <li>3</li>
+  <li class="active"><a href='/?p=1'>1</a></li>
+  <li><a href='/?p=2'>2</a></li>
+  <li><a href='/?p=3'>3</a></li>
   ...
 </ul>
-```
-or if use href
-```
-<ul class="pager">
-  <a href="/yourpage.html?p=1"><li class="active">1</li></a>
-  <a href="/yourpage.html?p=2"><li>2</li></a>
-  <a href="/yourpage.html?p=3"><li>3</li></a>
-  ...
-</ul>
-```
-
-CSS
-```
-.pager li, .pager a{
-
-  border:thin solid #ccc; 
-  color:#666;
-  
-}
-.pager.active{
-
-  color:$fff;
-  background-color:#666;
-  
-}
 ```
