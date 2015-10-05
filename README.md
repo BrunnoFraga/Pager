@@ -39,7 +39,6 @@ echo $pager->show("/my-specific-subpage");
 
 OUTPUT
 -----------
-* You don't need to copy this code below, this just the output
 
 HTML
 ```
